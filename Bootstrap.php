@@ -59,6 +59,6 @@ class Bootstrap implements BootstrapInterface
         }
 
 
-        \Yii::setAlias('@akiraz2', \Yii::getAlias('@vendor') . '/akiraz2');
+        \Yii::setAlias('@codebluestudio', \Yii::getAlias('@vendor') . '/codebluestudio');
     }
 }

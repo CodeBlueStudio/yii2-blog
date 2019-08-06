@@ -17,25 +17,31 @@ $this->title = Module::t('blog', 'Blog Tags');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="blog-tag-index">
+    <div class="page-header">
+        <h1><?= Html::encode($this->title) ?></h1>
 
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
+        <?= Html::a('Add New', ['create'], ['class' => 'btn btn-success pull-right']) ?>
+    </div>
 
-    <p>
-        <?= Html::a(Module::t('blog', 'Create ') . Module::t('blog', 'Blog Tag'), ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
+    <div class="row">
+        <div class="col-sm-9">
+            <?= GridView::widget([
+                'dataProvider' => $dataProvider,
+                'filterModel' => $searchModel,
+                'columns' => [
+                    ['class' => 'yii\grid\CheckboxColumn'],
 
-    <?= GridView::widget([
-        'dataProvider' => $dataProvider,
-        'filterModel' => $searchModel,
-        'columns' => [
-            ['class' => 'yii\grid\CheckboxColumn'],
+                    'id',
+                    'name',
+                    'frequency',
 
-            'id',
-            'name',
-            'frequency',
+                    ['class' => 'yii\grid\ActionColumn'],
+                ],
+            ]); ?>
+        </div>
 
-            ['class' => 'yii\grid\ActionColumn'],
-        ],
-    ]); ?>
-
+        <div class="col-sm-3">
+            <?= $this->render('@codebluestudio/yii2-blog/views/backend/_menu'); ?>
+        </div>
+    </div>
 </div>

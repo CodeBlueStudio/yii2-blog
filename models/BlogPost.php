@@ -115,9 +115,9 @@ class BlogPost extends \yii\db\ActiveRecord
     {
         return [
             'id' => Module::t('blog', 'ID'),
-            'category_id' => Module::t('blog', 'Category ID'),
+            'category_id' => Module::t('blog', 'Category'),
             'title' => Module::t('blog', 'Title'),
-            'brief' => Module::t('blog', 'Brief'),
+            'brief' => Module::t('blog', 'Short description'),
             'content' => Module::t('blog', 'Content'),
             'tags' => Module::t('blog', 'Tags'),
             'slug' => Module::t('blog', 'Slug'),
