@@ -47,7 +47,11 @@ if (Yii::$app->get('opengraph', false)) {
             'itemOptions' => [
                 'tag' => false
             ],
-            'layout' => '{items}{pager}'
+            'layout' => '{items}{pager}',
+            'pager' => [
+                'prevPageLabel' => 'Previous',
+                'nextPageLabel' => 'Next',
+            ]
         ]); ?>
 
         <?php /*
