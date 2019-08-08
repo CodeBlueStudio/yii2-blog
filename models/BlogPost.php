@@ -88,7 +88,7 @@ class BlogPost extends \yii\db\ActiveRecord
                 'filePath' => $this->module->imgFilePath . '/[[model]]/[[pk]].[[extension]]',
                 'fileUrl' => $this->module->getImgFullPathUrl() . '/[[model]]/[[pk]].[[extension]]',
                 'thumbPath' => $this->module->imgFilePath . '/[[model]]/[[profile]]_[[pk]].[[extension]]',
-                'thumbUrl' => $this->module->getImgFullPathUrl() . '/[[model]]/[[profile]]_[[pk]].[[extension]]',
+                'thumbUrl' => 'https://static.devspush.com/blog/[[model]]/[[profile]]_[[pk]].[[extension]]',
             ],
         ];
     }

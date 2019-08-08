@@ -8,7 +8,10 @@ $banner = $model->getThumbFileUrl('banner');
     <div class="card mt-4">
         <?php if (!is_null($banner)) { ?>
         <a href="<?= $model->url ?>">
-            <img class="card-img-top" alt="<?= Html::encode($model->title) ?>" src="<?= $banner ?>" />
+            <img class="card-img-top"
+                 alt="<?= Html::encode($model->title) ?>"
+                 src="<?= $banner ?>"
+            />
         </a>
         <?php } ?>
 
