@@ -23,7 +23,7 @@ if (Yii::$app->get('opengraph', false)) {
     Yii::$app->opengraph->set([
         'title' => $this->title,
         'description' => $post->brief,
-        'image' => $post->getImageFileUrl('banner'),
+        'image' => $post->getThumbFileUrl('banner'),
     ]);
 }
 

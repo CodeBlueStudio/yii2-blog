@@ -1,7 +1,7 @@
 <?php
 use yii\helpers\Html;
 
-$banner = $model->getImageFileUrl('banner');
+$banner = $model->getThumbFileUrl('banner');
 ?>
 
 <div class="col-12 col-md-6 col-lg-4">
