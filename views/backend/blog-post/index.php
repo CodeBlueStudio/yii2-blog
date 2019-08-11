@@ -45,6 +45,17 @@ $this->params['breadcrumbs'][] = $this->title;
                         )
                     ],
 
+                    [
+                        'attribute' => 'title',
+                        'value' => function ($model) {
+                            if (strlen($model->title) > 55) {
+                                return substr($model->title, 0, 50) . '...';
+                            }
+
+                            return $model->title;
+                        }
+                    ],
+
                     'title',
 
                     [
