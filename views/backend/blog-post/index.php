@@ -56,8 +56,6 @@ $this->params['breadcrumbs'][] = $this->title;
                         }
                     ],
 
-                    'title',
-
                     [
                         'attribute' => 'status',
                         'format' => 'html',
