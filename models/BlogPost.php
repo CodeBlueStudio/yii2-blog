@@ -83,7 +83,7 @@ class BlogPost extends \yii\db\ActiveRecord
                 'class' => ImageUploadBehavior::class,
                 'attribute' => 'banner',
                 'thumbs' => [
-                    'thumb' => ['width' => 430, 'height' => 286]
+                    'thumb' => ['width' => 430, 'height' => 242]
                 ],
                 'filePath' => $this->module->imgFilePath . '/[[model]]/[[pk]].[[extension]]',
                 'fileUrl' => $this->module->getImgFullPathUrl() . '/[[model]]/[[pk]].[[extension]]',
