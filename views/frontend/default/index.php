@@ -12,7 +12,7 @@ $this->title = 'Blog';
 
 Yii::$app->view->registerMetaTag([
     'name' => 'description',
-    'content' => 'Blog about Design, Ionic 4, React, Flutter & Android frameworks'
+    'content' => 'The blog section of our website is made specifically for promoting all the new app templates we come up with, and for elaborating the novelties from the world of app development.'
 ]);
 Yii::$app->view->registerMetaTag([
     'name' => 'keywords',
@@ -33,7 +33,7 @@ if (Yii::$app->get('opengraph', false)) {
         <div class="row mb-5">
             <div class="col-12">
                 <h1 class="font-size-xxlg tc-primary ml-5 mt-5 font-bold">DevsPush Blog</h1>
-                <p class="font-size-lg tc-primary ml-5">Blog about Design, Ionic 4, React, Flutter & Android frameworks</p>
+                <p class="font-size-lg tc-primary ml-5">The blog section of our website is made specifically for promoting all the new app templates we come up with, and for elaborating the novelties from the world of app development.</p>
             </div>
         </div>
 
