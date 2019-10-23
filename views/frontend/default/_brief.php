@@ -17,7 +17,7 @@ $banner = $model->getThumbFileUrl('banner');
 
         <div class="card-body">
             <span class="font-size-md tc-secundary"><?= Yii::$app->formatter->asDate($model->created_at) ?> by <?= $model->user->username ?></span>
-            <h2><?= Html::a(Html::encode($model->title), $model->url, ['class' => 'pt-3 font-size-xlg tc-primary font-light']); ?></h2>
+            <h2><?= Html::a(Html::encode($model->title), $model->url, ['class' => 'd-block mt-3 font-size-xlg tc-primary font-light']); ?></h2>
             <p class="pt-3 font-size-xmd tc-primary"><?= \yii\helpers\HtmlPurifier::process($model->brief) ?></p>
         </div>
     </div>
