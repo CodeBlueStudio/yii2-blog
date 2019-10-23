@@ -66,7 +66,7 @@ $recentNews = BlogPost::find()
                     <?= Yii::$app->formatter->asDate($post->created_at); ?> by <?= $post_user->{$username_attribute}; ?>
                 </time>
 
-                <div class="blog-content" itemprop="articleBody"><?= \yii\helpers\HtmlPurifier::process($post->content); ?></div>
+                <div class="blog-content" itemprop="articleBody"><?= $post->content ?></div>
 
                 <?php if (isset($post->module->schemaOrg) && isset($post->module->schemaOrg['publisher'])) : ?>
                     <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization" class="blog-post__publisher">
