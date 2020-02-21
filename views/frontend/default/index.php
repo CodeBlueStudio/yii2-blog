@@ -46,10 +46,16 @@ if (Yii::$app->get('opengraph', false)) {
             'itemOptions' => [
                 'tag' => false
             ],
-            'layout' => '{items}{pager}',
+            'layout' => '{items}<div class="col-12 my-5">{pager}</div>',
             'pager' => [
                 'prevPageLabel' => 'Previous',
                 'nextPageLabel' => 'Next',
+                'options' => [
+                    'class' => 'pagination d-flex justify-content-center my-3'
+                ],
+                'linkContainerOptions' => [
+                    'class' => 'font-size-xmd font-medium'
+                ],
             ]
         ]); ?>
 
